@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build && node scripts/prerender.mjs",
+    "build:github": "cross-env VITE_BASE_PATH=/BarinovFull/ VITE_SITE_URL=https://jura1223.github.io/BarinovFull/ vite build && node scripts/prerender.mjs",
     "preview": "vite preview",
     "lint": "eslint .",
     "format": "prettier --write ."
@@ -71,6 +72,7 @@
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
     "@vitejs/plugin-react": "^5.0.4",
+    "cross-env": "^10.1.0",
     "eslint": "^9.32.0",
     "eslint-config-prettier": "^10.1.1",
     "eslint-plugin-prettier": "^5.2.6",

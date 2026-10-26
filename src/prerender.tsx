@@ -9,7 +9,11 @@ export function renderPage() {
 
 /** Разметка для поисковиков и нейросетей (JSON-LD): кто это, чем занимается, вопросы и ответы. */
 export function structuredData() {
-  const url = "https://yurabarinov.ru/";
+  // URL сайта для SEO-тегов: можно задать через VITE_SITE_URL при сборке
+  // В prerender (Node.js) используем process.env, в браузере - import.meta.env
+  const url = (typeof process !== 'undefined' && process.env?.VITE_SITE_URL) ||
+              (import.meta.env?.VITE_SITE_URL) ||
+              "https://jura1223.github.io/BarinovFull/";
   const person = {
     "@type": "Person",
     "@id": url + "#person",
