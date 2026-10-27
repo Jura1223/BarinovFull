@@ -25,12 +25,12 @@ jobs:
           cache: npm
       - run: npm ci
       - name: Build
-        # Пока на Pages нет своего домена, сайт живёт по адресу /BarinovFull/.
-        # Когда в Settings → Pages подключён домен yurabarinov.ru, ставим переменную
-        # репозитория PAGES_BASE_PATH = "/" (Settings → Variables → Actions).
+        # Сайт живёт на своём домене yurabarinov.ru, то есть в корне "/".
+        # Для проверки на адресе jura1223.github.io/BarinovFull/ (когда домен отключён)
+        # задайте переменную репозитория PAGES_BASE_PATH = "/BarinovFull/".
         run: npm run build
         env:
-          VITE_BASE_PATH: ${{ vars.PAGES_BASE_PATH || '/BarinovFull/' }}
+          VITE_BASE_PATH: ${{ vars.PAGES_BASE_PATH || '/' }}
       - name: SPA fallback (404.html)
         run: cp dist/index.html dist/404.html
       - uses: actions/configure-pages@v5
