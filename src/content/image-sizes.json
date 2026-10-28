@@ -1,0 +1,402 @@
+{
+"/images/cases/anthony-subs.webp": [
+500,
+282
+],
+"/images/cases/chernyak.webp": [
+1124,
+1192
+],
+"/images/cases/daria-chernyak-instagram.webp": [
+1200,
+723
+],
+"/images/cases/eidelman-case.webp": [
+588,
+259
+],
+"/images/cases/eidelman.webp": [
+985,
+400
+],
+"/images/cases/igor-vorontsov-instagram.webp": [
+1200,
+886
+],
+"/images/cases/marita-case.webp": [
+1350,
+564
+],
+"/images/cases/oboronashop.webp": [
+321,
+593
+],
+"/images/cases/panchin-call.webp": [
+420,
+1289
+],
+"/images/cases/panchin-case.webp": [
+960,
+387
+],
+"/images/cases/pavel-butuzov-instagram.webp": [
+1200,
+984
+],
+"/images/cases/pluzhnikova-cases.webp": [
+1400,
+596
+],
+"/images/cases/result-anthony.webp": [
+449,
+868
+],
+"/images/cases/result-plieva.webp": [
+560,
+830
+],
+"/images/cases/result-plieva1.webp": [
+691,
+1024
+],
+"/images/cases/result-realty.webp": [
+323,
+588
+],
+"/images/cases/result-slon.webp": [
+305,
+522
+],
+"/images/cases/result-vape.webp": [
+452,
+842
+],
+"/images/cases/result-vitus.webp": [
+460,
+845
+],
+"/images/cases/review-extra-1.webp": [
+768,
+1238
+],
+"/images/cases/review-extra-2.webp": [
+468,
+646
+],
+"/images/cases/verdict-case.jpg": [
+1080,
+1440
+],
+"/images/cases/volya-case.jpg": [
+1080,
+1440
+],
+"/images/cases/voroncov-instagram.webp": [
+1080,
+1920
+],
+"/images/logos/ntv.png": [
+128,
+128
+],
+"/images/logos/rbc.png": [
+128,
+128
+],
+"/images/logos/russia24.png": [
+128,
+128
+],
+"/images/logos/tnt4.jpg": [
+302,
+283
+],
+"/images/logos/yandex-practicum.png": [
+48,
+48
+],
+"/images/people/anthony-thumb.webp": [
+600,
+338
+],
+"/images/people/anthony-thumb2.webp": [
+600,
+338
+],
+"/images/people/anthony.webp": [
+900,
+506
+],
+"/images/people/brands-honor-yandex.webp": [
+750,
+1000
+],
+"/images/people/brands-tv.webp": [
+750,
+1000
+],
+"/images/people/britva.webp": [
+235,
+326
+],
+"/images/people/collab-1.webp": [
+640,
+572
+],
+"/images/people/collab-2.webp": [
+640,
+563
+],
+"/images/people/collab-3.webp": [
+640,
+431
+],
+"/images/people/collab-4.webp": [
+640,
+448
+],
+"/images/people/eidelman-new.jpg": [
+400,
+400
+],
+"/images/people/eidelman.webp": [
+700,
+828
+],
+"/images/people/gogunsky-card.webp": [
+658,
+672
+],
+"/images/people/gogunsky-case.webp": [
+479,
+559
+],
+"/images/people/kurpatov-card.webp": [
+750,
+1000
+],
+"/images/people/kurpatov.webp": [
+700,
+594
+],
+"/images/people/panchin-new.jpg": [
+550,
+550
+],
+"/images/people/panchin.webp": [
+700,
+1089
+],
+"/images/people/plieva.webp": [
+240,
+256
+],
+"/images/people/pluzhnikova.jpg": [
+320,
+320
+],
+"/images/people/verdict-case.webp": [
+720,
+960
+],
+"/images/people/volya-case.webp": [
+720,
+960
+],
+"/images/people/vorontsov-card.webp": [
+480,
+480
+],
+"/images/people/vorontsov.webp": [
+640,
+640
+],
+"/images/previewsforvideo/butuzov-examplework1.webp": [
+282,
+437
+],
+"/images/previewsforvideo/butuzov-examplework2.webp": [
+288,
+445
+],
+"/images/previewsforvideo/butuzov-feedback.webp": [
+720,
+1280
+],
+"/images/previewsforvideo/dashaexamplework1.webp": [
+284,
+440
+],
+"/images/previewsforvideo/dashaexamplework2.webp": [
+282,
+438
+],
+"/images/previewsforvideo/dashaexamplework3.webp": [
+330,
+498
+],
+"/images/previewsforvideo/dashaexamplework4.webp": [
+285,
+435
+],
+"/images/previewsforvideo/example1.webp": [
+284,
+467
+],
+"/images/previewsforvideo/example10.webp": [
+550,
+975
+],
+"/images/previewsforvideo/example11.webp": [
+288,
+510
+],
+"/images/previewsforvideo/example12.webp": [
+720,
+540
+],
+"/images/previewsforvideo/example13.webp": [
+379,
+627
+],
+"/images/previewsforvideo/example2.webp": [
+340,
+606
+],
+"/images/previewsforvideo/example3.webp": [
+378,
+708
+],
+"/images/previewsforvideo/example4.webp": [
+292,
+440
+],
+"/images/previewsforvideo/example5.webp": [
+378,
+708
+],
+"/images/previewsforvideo/example6.webp": [
+378,
+708
+],
+"/images/previewsforvideo/example7.webp": [
+421,
+711
+],
+"/images/previewsforvideo/example8.webp": [
+378,
+708
+],
+"/images/previewsforvideo/example9.webp": [
+720,
+1245
+],
+"/images/previewsforvideo/igor-feedback.webp": [
+720,
+1280
+],
+"/images/previewsforvideo/igorexamplework1.webp": [
+280,
+440
+],
+"/images/previewsforvideo/igorexamplework2.webp": [
+284,
+436
+],
+"/images/previewsforvideo/igorexamplework3.webp": [
+285,
+443
+],
+"/images/previewsforvideo/igorexamplework4.webp": [
+287,
+440
+],
+"/images/reviews/review1.webp": [
+396,
+639
+],
+"/images/reviews/review2.webp": [
+1200,
+1400
+],
+"/images/reviews/review3.webp": [
+1200,
+1324
+],
+"/images/reviews/review5.webp": [
+1200,
+1266
+],
+"/images/reviews/review6.webp": [
+1200,
+1491
+],
+"/images/reviews/review7.webp": [
+1080,
+1920
+],
+"/images/site/avatar-1.jpg": [
+512,
+512
+],
+"/images/site/avatar-2.jpg": [
+512,
+512
+],
+"/images/site/avatar-3.jpg": [
+512,
+512
+],
+"/images/site/avatar-4.jpg": [
+512,
+512
+],
+"/images/site/avatar-5.jpg": [
+512,
+512
+],
+"/images/site/avatar-6.jpg": [
+512,
+512
+],
+"/images/site/case-butuzov.jpg": [
+800,
+800
+],
+"/images/site/case-voroncov.webp": [
+800,
+800
+],
+"/images/site/portrait-circle.webp": [
+520,
+520
+],
+"/images/site/portrait-cta.webp": [
+878,
+1195
+],
+"/images/site/portrait-hero.webp": [
+956,
+915
+],
+"/images/site/reel-1.jpg": [
+576,
+1024
+],
+"/images/site/reel-2.jpg": [
+576,
+1024
+],
+"/images/site/reel-3.jpg": [
+576,
+1024
+],
+"/images/site/reel-4.jpg": [
+576,
+1024
+],
+"/images/site/reel-5.jpg": [
+576,
+1024
+]
+}

@@ -67,7 +67,7 @@ export function SecondaryCase() {
             <div className="lg:col-span-5">
               {c.instagramImage && (
                 <div className="relative overflow-hidden rounded-2xl border border-white/15">
-                  <img src={c.instagramImage} alt="Instagram Павла Бутузова: среди подписчиков Арсен Маркарян" loading="lazy" className="h-full w-full object-cover" />
+                  <img src={c.instagramImage} alt="Instagram Павла Бутузова: среди подписчиков Арсен Маркарян" loading="lazy" decoding="async" className="h-full w-full object-cover" />
                   <div className="absolute right-2 top-2 rounded-full bg-gradient-to-r from-purple-500/90 to-pink-500/90 px-2 py-1 text-[11px] text-white">Instagram</div>
                 </div>
               )}

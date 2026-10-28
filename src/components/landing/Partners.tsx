@@ -37,7 +37,7 @@ export function PersonCard({ p, index = 0 }: { p: Person; index?: number }) {
           <img
             src={p.photo}
             alt={`${p.name}, ${p.role}`}
-            loading="lazy"
+            loading="lazy" decoding="async"
             className={`h-full w-full object-cover transition-transform duration-700 group-hover:scale-105 ${(p as { photoClass?: string }).photoClass ?? "object-[50%_25%]"}`}
           />
         ) : (
@@ -79,7 +79,7 @@ export function PersonCard({ p, index = 0 }: { p: Person; index?: number }) {
 function AlsoChip({ item }: { item: AlsoItem }) {
   const content = (
     <>
-      {item.logo && <img src={item.logo} alt={item.logoOnly ? item.name : ""} className="h-5 w-auto shrink-0 md:h-6" loading="lazy" />}
+      {item.logo && <img src={item.logo} alt={item.logoOnly ? item.name : ""} className="h-5 w-auto shrink-0 md:h-6" loading="lazy" decoding="async" />}
       {!item.logoOnly && <span>{item.name}</span>}
     </>
   );

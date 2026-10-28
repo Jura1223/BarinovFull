@@ -31,7 +31,7 @@ export function ContentLists() {
                 alt="Юра Баринов, контент-продюсер"
                 width={878}
                 height={1195}
-                loading="lazy"
+                loading="lazy" decoding="async"
                 className="h-full w-full object-cover object-[50%_15%]"
               />
             </div>

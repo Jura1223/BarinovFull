@@ -44,7 +44,7 @@ export function Testimonials() {
                     <img 
                       src={t.img} 
                       alt={t.name} 
-                      loading="lazy"
+                      loading="lazy" decoding="async"
                       className="h-full w-full object-contain bg-[#0E0E0E]"
                     />
                   </div>
@@ -72,7 +72,7 @@ export function Testimonials() {
                   )}
                   <figcaption className="mt-6 flex items-center gap-3">
                     {t.img && (
-                      <img src={t.img} alt={t.name} loading="lazy"
+                      <img src={t.img} alt={t.name} loading="lazy" decoding="async"
                            className="h-10 w-10 rounded-full object-cover border border-white/10" />
                     )}
                     <div>
@@ -92,7 +92,7 @@ export function Testimonials() {
                 <img 
                   src={screenshot} 
                   alt={reviewLabels[i] ?? `Отзыв ${i + 1}`} 
-                  loading="lazy"
+                  loading="lazy" decoding="async"
                   className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
                 />
               </div>

@@ -23,7 +23,7 @@ export function VideoThumb({ image, alt, onClick, href, className = "", playSize
       <img
         src={image}
         alt={alt}
-        loading="lazy"
+        loading="lazy" decoding="async"
         className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
       />
       {/* лёгкая подсветка сверху; низ не затемняем, там стоят счётчики */}

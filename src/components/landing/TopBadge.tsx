@@ -12,7 +12,7 @@ export function TopBadge() {
 
           <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-center relative">
             <div className="md:col-span-4 relative aspect-square max-w-[280px] mx-auto md:mx-0 w-full overflow-hidden rounded-2xl border border-white/10">
-              <img src={t.image} alt="" loading="lazy" className="h-full w-full object-cover" />
+              <img src={t.image} alt="" loading="lazy" decoding="async" className="h-full w-full object-cover" />
             </div>
 
             <div className="md:col-span-6">

@@ -88,7 +88,7 @@ export function DaryaCase() {
               
               {c.instagramImage && (
                 <div className="mt-4 relative overflow-hidden rounded-2xl border border-white/10">
-                  <img src={c.instagramImage} alt="Instagram Дарьи Черняк" loading="lazy" className="h-full w-full object-cover" />
+                  <img src={c.instagramImage} alt="Instagram Дарьи Черняк" loading="lazy" decoding="async" className="h-full w-full object-cover" />
                   <div className="absolute top-2 right-2 bg-gradient-to-r from-purple-500/90 to-pink-500/90 text-white text-[11px] px-2 py-1 rounded-full">
                     Instagram
                   </div>
