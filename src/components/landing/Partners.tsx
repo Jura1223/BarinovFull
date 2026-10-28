@@ -53,7 +53,7 @@ export function PersonCard({ p, index = 0 }: { p: Person; index?: number }) {
           </div>
         )}
         <div
-          className={`absolute inset-x-0 p-3.5 md:p-5 ${
+          className={`absolute inset-x-0 p-3 md:p-5 ${
             (p as { noteTop?: boolean }).noteTop
               ? "top-0 bg-gradient-to-b from-black/80 via-black/40 to-transparent pb-10"
               : "bottom-0 bg-gradient-to-t from-black via-black/80 to-transparent pt-10 md:pt-10"
@@ -63,12 +63,30 @@ export function PersonCard({ p, index = 0 }: { p: Person; index?: number }) {
             <h3 className="sr-only">{p.name}</h3>
           ) : (
             <>
-              <h3 className="font-display text-[15px] font-bold leading-tight md:text-xl">{p.name}</h3>
-              <p className="mt-1 text-[12.5px] leading-snug text-white/90 md:mt-1 md:text-[13px]">{p.role}</p>
+              <h3 className="truncate whitespace-nowrap font-display text-[clamp(10px,3.3vw,15px)] font-bold leading-tight md:overflow-visible md:whitespace-normal md:text-xl">{p.name}</h3>
+              <p className="mt-0.5 text-[clamp(9.5px,2.85vw,12.5px)] leading-snug text-white/90 md:mt-1 md:overflow-visible md:whitespace-normal md:text-[13px]">
+                {(p as { roleShort?: string }).roleShort ? (
+                  <>
+                    <span className="md:hidden">{(p as { roleShort?: string }).roleShort}</span>
+                    <span className="hidden md:inline">{p.role}</span>
+                  </>
+                ) : (
+                  p.role
+                )}
+              </p>
             </>
           )}
-          <p className={`mt-2 inline-block rounded-full ${(p as { hideNote?: boolean }).hideNote ? "sr-only" : ""}  border border-[var(--brand)]/50 bg-[var(--brand)]/15 px-2.5 py-1 text-[11.5px] font-medium leading-tight text-[var(--brand)] md:mt-2 md:px-3 md:text-xs`}>
-            {Array.isArray(p.note) ? p.note.join(", ") : p.note}
+          <p className={`mt-2 inline-block rounded-full ${(p as { hideNote?: boolean }).hideNote ? "sr-only" : ""}  border border-[var(--brand)]/50 bg-[var(--brand)]/15 px-2.5 py-0.5 md:py-1 text-[clamp(10px,3vw,11.5px)] font-medium leading-tight text-[var(--brand)] md:mt-2 md:px-3 md:text-xs`}>
+            {(p as { noteShort?: string }).noteShort ? (
+              <>
+                <span className="md:hidden">{(p as { noteShort?: string }).noteShort}</span>
+                <span className="hidden md:inline">{Array.isArray(p.note) ? p.note.join(", ") : p.note}</span>
+              </>
+            ) : Array.isArray(p.note) ? (
+              p.note.join(", ")
+            ) : (
+              p.note
+            )}
           </p>
         </div>
       </div>
