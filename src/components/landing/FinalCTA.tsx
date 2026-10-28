@@ -16,7 +16,7 @@ export function FinalCTA() {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-center">
             <div className="md:col-span-4 relative order-first md:order-last">
               <div className="relative aspect-square w-full max-w-[160px] md:max-w-[200px] mx-auto overflow-hidden rounded-2xl border border-white/15">
-                <img src={c.image} alt="Юрий Баринов, контент-продюсер" loading="lazy" className="h-full w-full object-cover" />
+                <img src={c.image} alt="Юрий Баринов, контент-продюсер" loading="lazy" decoding="async" className="h-full w-full object-cover" />
                 <div className="absolute inset-0 bg-black/25" />
               </div>
             </div>

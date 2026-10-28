@@ -66,7 +66,7 @@ export function ReelsCarousel() {
                   <img
                     src={r.src}
                     alt={r.label || `Пример Reels ${i + 1}: монтаж Юрия Баринова`}
-                    loading="lazy"
+                    loading="lazy" decoding="async"
                     className="absolute inset-0 h-full w-full object-cover"
                   />
                   {isActive && (

@@ -3,6 +3,14 @@ import { Check, ArrowUpRight, Home } from "lucide-react";
 import { site, type Bullet, type ResultItem } from "@/content/site";
 import { CountUp } from "@/components/ui/CountUp";
 import { VideoThumb } from "@/components/ui/VideoThumb";
+import imageSizes from "@/content/image-sizes.json";
+
+/** width/height картинки из каталога размеров: браузер заранее резервирует место, страница не «прыгает». */
+function dims(src: string) {
+  const key = src.slice(src.indexOf("/images/"));
+  const d = (imageSizes as Record<string, number[]>)[key];
+  return d ? { width: d[0], height: d[1] } : {};
+}
 
 function initials(name: string) {
   return name
@@ -78,7 +86,7 @@ export function ResultsGrid() {
               <div className="flex items-center gap-3.5">
                 <div className="h-14 w-14 shrink-0 overflow-hidden rounded-full border border-white/20 bg-[#141414]">
                   {item.photo ? (
-                    <img src={item.photo} alt={item.name} loading="lazy" className={`h-full w-full object-cover ${(item as any).photoClass || ""}`} />
+                    <img src={item.photo} alt={item.name} loading="lazy" decoding="async" className={`h-full w-full object-cover ${(item as any).photoClass || ""}`} />
                   ) : (
                     <div
                       className={`grid h-full w-full place-items-center font-display font-bold text-[var(--brand)] ${item.avatar && item.avatar.length === 2 && !/\p{Extended_Pictographic}/u.test(item.avatar) ? "text-lg" : "text-2xl"}`}
@@ -98,7 +106,7 @@ export function ResultsGrid() {
               <div className="mt-6 flex min-h-[3.25rem] items-center justify-between gap-3">
                 <Metric item={item} />
                 {item.sideStat && (
-                  <img src={item.sideStat.src} alt={item.sideStat.alt} loading="lazy" className="h-auto w-[50%] max-w-[210px] shrink-0 rounded-xl border border-white/20" />
+                  <img src={item.sideStat.src} alt={item.sideStat.alt} loading="lazy" decoding="async" className="h-auto w-[50%] max-w-[210px] shrink-0 rounded-xl border border-white/20" />
                 )}
               </div>
               <p className="mt-2 text-sm text-white/90">{item.caption}</p>
@@ -116,7 +124,7 @@ export function ResultsGrid() {
 
               {item.extra && (
                 <figure className="mt-5 flex items-center gap-4">
-                  <img src={item.extra.src} alt={item.extra.alt} loading="lazy" className="h-auto w-[28%] max-w-[110px] shrink-0 rounded-xl border border-white/20" />
+                  <img src={item.extra.src} {...dims(item.extra.src)} alt={item.extra.alt} loading="lazy" decoding="async" className="h-auto w-[28%] max-w-[110px] shrink-0 rounded-xl border border-white/20" />
                   <figcaption className="text-[13.5px] leading-snug text-white/85">{item.extra.caption}</figcaption>
                 </figure>
               )}
@@ -141,10 +149,10 @@ export function ResultsGrid() {
                 <div className="mt-5 overflow-hidden rounded-2xl border border-white/20">
                   {item.preview.href ? (
                     <a href={item.preview.href} target="_blank" rel="noopener noreferrer">
-                      <img src={item.preview.src} alt={item.preview.alt} loading="lazy" className="mx-auto max-h-[420px] w-auto object-contain" />
+                      <img src={item.preview.src} {...dims(item.preview.src)} alt={item.preview.alt} loading="lazy" decoding="async" className="mx-auto max-h-[420px] w-auto object-contain" />
                     </a>
                   ) : (
-                    <img src={item.preview.src} alt={item.preview.alt} loading="lazy" className="mx-auto max-h-[420px] w-auto object-contain" />
+                    <img src={item.preview.src} {...dims(item.preview.src)} alt={item.preview.alt} loading="lazy" decoding="async" className="mx-auto max-h-[420px] w-auto object-contain" />
                   )}
                 </div>
               )}
@@ -157,7 +165,7 @@ export function ResultsGrid() {
                   className="mt-5 block overflow-hidden rounded-2xl border border-white/20"
                   aria-label={`Открыть статистику: ${item.name}`}
                 >
-                  <img src={item.statsImage.src} alt={item.statsImage.alt} loading="lazy" className="w-full object-contain" />
+                  <img src={item.statsImage.src} {...dims(item.statsImage.src)} alt={item.statsImage.alt} loading="lazy" decoding="async" className="w-full object-contain" />
                 </a>
               )}
 

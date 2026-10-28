@@ -70,7 +70,7 @@ export function FeaturedCase() {
               <p className="mt-2 text-sm text-white/76">{c.role}</p>
 
               <div className="mt-8 aspect-square w-full max-w-[280px] overflow-hidden rounded-2xl border border-white/10">
-                <img src={c.image} alt={c.name} loading="lazy" className="h-full w-full object-cover" />
+                <img src={c.image} alt={c.name} loading="lazy" decoding="async" className="h-full w-full object-cover" />
               </div>
 
               <div className="mt-8">

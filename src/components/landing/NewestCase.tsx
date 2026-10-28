@@ -50,7 +50,7 @@ export function NewestCase() {
                   <img
                     src={c.photo}
                     alt={`${c.name}, ${c.role}`}
-                    loading="lazy"
+                    loading="lazy" decoding="async"
                     className="h-full w-full object-cover object-[50%_20%]"
                   />
                 ) : (
@@ -120,7 +120,7 @@ export function NewestCase() {
                       <img
                         src={src}
                         alt={`Кадр со съёмок: коллаб Виталия Гогунского ${i + 1}`}
-                        loading="lazy"
+                        loading="lazy" decoding="async"
                         className="aspect-[4/3] h-full w-full object-cover object-[50%_25%]"
                       />
                     </div>
