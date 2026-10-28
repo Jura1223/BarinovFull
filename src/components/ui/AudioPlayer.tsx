@@ -59,7 +59,7 @@ export function AudioPlayer({ audioSrc, label, className = "" }: AudioPlayerProp
 
   return (
     <div className={`group flex items-center gap-3 rounded-xl border border-white/10 bg-[#0E0E0E] hover:border-[var(--brand)]/40 transition-all px-4 py-2.5 ${className}`}>
-      <audio ref={audioRef} src={audioSrc} />
+      <audio ref={audioRef} src={audioSrc} preload="none" />
       
       <button
         type="button"
