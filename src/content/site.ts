@@ -309,6 +309,7 @@ export const site = {
   workflowNote: "",
 
   reels: [
+    { src: "/images/previewsforvideo/example9.webp", label: "", views: "", vkUrl: "https://vk.com/clip_ext.php?oid=1050064932&id=456239038&autoplay=1" },
     { src: "/images/previewsforvideo/example13.webp", label: "", views: "", vkUrl: "https://vk.com/clip_ext.php?oid=-225790566&id=456239190&autoplay=1" },
     { src: "/images/previewsforvideo/example1.webp", label: "", views: "", vkUrl: "https://vk.com/clip_ext.php?oid=-220903431&id=456239159&autoplay=1" },
     { src: "/images/previewsforvideo/example2.webp", label: "", views: "", vkUrl: "https://vk.com/clip_ext.php?oid=1050064932&id=456239050&autoplay=1" },
@@ -318,7 +319,6 @@ export const site = {
     { src: "/images/previewsforvideo/example6.webp", label: "", views: "", vkUrl: "https://vk.com/clip_ext.php?oid=1050064932&id=456239045&autoplay=1" },
     { src: "/images/previewsforvideo/example7.webp", label: "", views: "", vkUrl: "https://vk.com/clip_ext.php?oid=1050064932&id=456239048&autoplay=1" },
     { src: "/images/previewsforvideo/example8.webp", label: "", views: "", vkUrl: "https://vk.com/clip_ext.php?oid=1050064932&id=456239037&autoplay=1" },
-    { src: "/images/previewsforvideo/example9.webp", label: "", views: "", vkUrl: "https://vk.com/clip_ext.php?oid=1050064932&id=456239038&autoplay=1" },
     { src: "/images/previewsforvideo/example10.webp", label: "", views: "", vkUrl: "https://vk.com/clip_ext.php?oid=1050064932&id=456239039&autoplay=1" },
     { src: "/images/previewsforvideo/example11.webp", label: "", views: "", vkUrl: "https://vk.com/clip_ext.php?oid=1050064932&id=456239049&autoplay=1" },
     { src: "/images/previewsforvideo/example12.webp", label: "", views: "", vkUrl: "https://www.youtube.com/embed/guDOIIA7-Sc?si=_l6rtbl5shsxgPDX", isHorizontal: true },
@@ -669,8 +669,8 @@ export const site = {
         extra: { src: "/images/cases/panchin-call.webp", alt: "Созвон Юрия Баринова с Александром Панчиным и Егором Максимовым", caption: "Созвон с Егором Максимовым (канал 455 тыс. подписчиков) и Александром Панчиным (520+ тыс. подписчиков)" },
         links: [{ label: "YouTube-канал", href: "https://www.youtube.com/@Scinquisitor" }],
         videos: [
-          { label: "Выпуск 1", href: "https://www.youtube.com/watch?v=guDOIIA7-Sc&t=4s", thumb: "https://i.ytimg.com/vi/guDOIIA7-Sc/hqdefault.jpg" },
-          { label: "Выпуск 2", href: "https://www.youtube.com/watch?v=P-J2ibUhSkI&t=53s", thumb: "https://i.ytimg.com/vi/P-J2ibUhSkI/hqdefault.jpg" },
+          { label: "Выпуск 1", href: "https://www.youtube.com/watch?v=guDOIIA7-Sc&t=4s", thumb: "/images/cases/panchin-vypusk-1.webp" },
+          { label: "Выпуск 2", href: "https://www.youtube.com/watch?v=P-J2ibUhSkI&t=53s", thumb: "/images/cases/panchin-vypusk-2.webp" },
         ],
       },
       {
